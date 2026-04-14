@@ -180,8 +180,8 @@ footer{text-align:center;padding:20px;color:var(--ink4);font-size:.78rem;border-
   <div class="hdr-logo">
     <div class="hdr-icon">🥚</div>
     <div>
-      <div class="hdr-title">Ndokk_Mu</div>
-      <div class="hdr-sub">Distributor Telur Ter Pecaya</div>
+      <div class="hdr-title">Aplikasi Penjualan</div>
+      <div class="hdr-sub">Distributor Ter Pecaya</div>
     </div>
   </div>
   <button class="btn-login" onclick="openLogin()">🔐 Login</button>
@@ -286,7 +286,7 @@ function buildCard(u, isAdmin){
   const borderColor = isAdmin ? 'var(--bl)' : 'var(--or)';
   const avatarBg    = isAdmin ? 'linear-gradient(135deg,var(--bl),#1E3A8A)' : 'linear-gradient(135deg,var(--or),var(--or-d))';
   const roleLabel   = isAdmin ? 'Admin' : 'Agen';
-  const hargaRow    = u.harga_jual ? `<div class="agen-row">💰 <span style="color:var(--or);font-weight:800">Rp ${Number(u.harga_jual).toLocaleString('id-ID')} / kg</span></div>` : '';
+  const hargaRow    = u.harga_jual ? `<div class="agen-row">💰 <span style="color:var(--or);font-weight:800">Rp ${Number(u.harga_jual).toLocaleString('id-ID')} / pcs</span></div>` : '';
   return `<div class="agen-card" style="border-left-color:${borderColor}">
     <div class="agen-head">
       <div class="agen-avatar" style="background:${avatarBg}">${initial}</div>
